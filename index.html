@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>234D Games | Independent Game Studio</title>
+<title>234D Games | Game Design & Development Portfolio</title>
 
 <style>
 
@@ -24,8 +23,8 @@ body {
 
 header {
     text-align: center;
-    padding: 40px 20px;
-    background: rgba(0,0,0,0.25);
+    padding: 55px 20px;
+    background: rgba(0,0,0,0.28);
 }
 
 header h1 {
@@ -39,8 +38,14 @@ header p {
     color: #d9efff;
 }
 
+.header-role {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #9ddcff;
+}
+
 section {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: auto;
     padding: 40px 20px;
 }
@@ -56,27 +61,41 @@ section {
 
 .hero p {
     font-size: 18px;
+    max-width: 800px;
+    margin: auto;
 }
 
-.play-button {
+.play-button,
+.portfolio-button {
     display: inline-block;
     margin-top: 25px;
     padding: 14px 30px;
-    background: #1a73e8;
     color: white;
     text-decoration: none;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
+}
+
+.play-button {
+    background: #1a73e8;
 }
 
 .play-button:hover {
     background: #0f5dc2;
 }
 
+.portfolio-button {
+    background: #16875d;
+}
+
+.portfolio-button:hover {
+    background: #116b4a;
+}
+
 .card {
     background: rgba(255,255,255,0.1);
-    padding: 25px;
+    padding: 28px;
     border-radius: 15px;
     margin-top: 25px;
 }
@@ -86,57 +105,178 @@ section {
     font-size: 26px;
 }
 
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 15px;
+.card p {
+    font-size: 16px;
 }
 
-.feature {
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    text-align: center;
+    color: #d9efff;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.features,
+.design-grid,
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.feature,
+.design-item,
+.skill-item {
     background: rgba(0,0,0,0.25);
-    padding: 20px;
+    padding: 22px;
     border-radius: 12px;
     text-align: center;
 }
 
-footer {
+.feature {
+    font-size: 17px;
+}
+
+.feature-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.design-item h4,
+.skill-item h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #9ddcff;
+}
+
+.design-item p,
+.skill-item p {
+    font-size: 14px;
+}
+
+.gdd-box {
+    background: rgba(0,0,0,0.28);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 25px;
     text-align: center;
-    padding: 25px;
-    background: rgba(0,0,0,0.3);
-    margin-top: 30px;
+}
+
+.gdd-box h3 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.gdd-box p {
+    max-width: 780px;
+    margin: auto;
+    color: #e0f2ff;
+}
+
+.gdd-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 13px 28px;
+    background: #ffffff;
+    color: #12365d;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.gdd-button:hover {
+    background: #d9efff;
+}
+
+.project-list {
+    margin-top: 18px;
+    padding-left: 22px;
+}
+
+.project-list li {
+    margin-bottom: 7px;
+}
+
+.highlight {
+    color: #9ddcff;
+    font-weight: bold;
+}
+
+.contact {
+    text-align: center;
 }
 
 a {
     color: #9ddcff;
 }
 
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 30px;
+    color: #d9efff;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+}
+
 </style>
 
 </head>
 
-
 <body>
+
+
+<!-- HEADER -->
 
 <header>
 
 <h1>234D Games</h1>
 
 <p>
-Independent Mobile Game Studio
+Independent Game Studio
 </p>
+
+<div class="header-role">
+Nagesh Ranbhise — Game Designer | Unity Developer | 2D & 3D Digital Artist
+</div>
 
 </header>
 
+
+
+<!-- HERO -->
 
 <section class="hero">
 
 <h2>Sky Shooter: Save the City</h2>
 
 <p>
-Take control of your aircraft, fight enemy forces,
-and defend the city in an action-packed aerial battle.
+An independently developed Unity mobile game combining gameplay programming,
+combat systems, enemy design, targeting mechanics, visual development,
+and Android deployment.
 </p>
-
 
 <a class="play-button"
 href="https://play.google.com/store/apps/details?id=com.gamestudio234d.skyshootersavethecity"
@@ -150,6 +290,241 @@ target="_blank">
 
 
 
+<!-- GAME DESIGN PORTFOLIO -->
+
+<section>
+
+<h2 class="section-title">
+Game Design & Development Portfolio
+</h2>
+
+<p class="section-intro">
+A selection of systems and design documentation demonstrating how I approach
+gameplay mechanics, combat, progression, economy, boss encounters,
+and designer–programmer communication.
+</p>
+
+
+<div class="design-grid">
+
+<div class="design-item">
+
+<h4>⚔️ Combat Design</h4>
+
+<p>
+Readable attacks, player movement, targeting,
+weapons, damage systems and meaningful combat decisions.
+</p>
+
+</div>
+
+
+<div class="design-item">
+
+<h4>👹 Boss & Enemy Design</h4>
+
+<p>
+Enemy roles, attack patterns, boss phases,
+telegraphs and fair player counterplay.
+</p>
+
+</div>
+
+
+<div class="design-item">
+
+<h4>🎯 Risk & Reward</h4>
+
+<p>
+Mechanics that encourage aggressive and skilled play
+while keeping mistakes meaningful.
+</p>
+
+</div>
+
+
+<div class="design-item">
+
+<h4>📈 Progression & Economy</h4>
+
+<p>
+XP curves, reward pacing and progression systems
+designed to keep players engaged without over-leveling.
+</p>
+
+</div>
+
+
+<div class="design-item">
+
+<h4>🔄 Gameplay Systems</h4>
+
+<p>
+Player abilities, cooldowns, resources, states,
+interactions and edge-case handling.
+</p>
+
+</div>
+
+
+<div class="design-item">
+
+<h4>💻 Programmer Handoff</h4>
+
+<p>
+Clear specifications, flows, values, edge cases
+and acceptance criteria for implementation.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- GDD -->
+
+<div class="gdd-box">
+
+<h3>📘 Game Design Document Sample</h3>
+
+<p>
+My sample GDD demonstrates how I document game systems from concept
+through implementation and balancing. It includes combat design,
+boss telegraphing, risk/reward mechanics, XP progression,
+economy thinking, and a Time-Rewind ability specification.
+</p>
+
+<a class="gdd-button"
+href="documents/Nagesh_Ranbhise_Game_Design_Sample_GDD.pdf"
+target="_blank">
+
+View Game Design Document
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- SKY SHOOTER -->
+
+<section>
+
+<div class="card">
+
+<h3>🎮 Featured Project — Sky Shooter: Save the City</h3>
+
+<p>
+A Unity-based mobile action shooter independently designed and developed
+from concept through Android deployment and Google Play publishing.
+</p>
+
+<ul class="project-list">
+
+<li>Unity gameplay development and C# scripting</li>
+
+<li>Player movement and mobile joystick controls</li>
+
+<li>Enemy spawning and attack patterns</li>
+
+<li>Aircraft combat and shooting systems</li>
+
+<li>Missile targeting and lock-on mechanics</li>
+
+<li>Enemy health and damage systems</li>
+
+<li>Level progression and multiple themes</li>
+
+<li>Mobile UI and safe-area implementation</li>
+
+<li>Android build, testing and Google Play deployment</li>
+
+<li>AdMob monetization integration</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+
+<!-- SKY SHOOTER FEATURES -->
+
+<section>
+
+<div class="card">
+
+<h3>Sky Shooter Features</h3>
+
+<div class="features">
+
+<div class="feature">
+
+<div class="feature-icon">✈️</div>
+
+Aircraft Combat
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🌆</div>
+
+City Defense Missions
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🚀</div>
+
+Missiles & Weapons
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🎯</div>
+
+Enemy Challenges
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🕹️</div>
+
+Mobile Controls
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">💥</div>
+
+Combat Effects
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
 <section>
 
 <div class="card">
@@ -157,112 +532,178 @@ target="_blank">
 <h3>About 234D Games</h3>
 
 <p>
-About 234D Games
 
-234D Games is an independent game studio creating immersive digital experiences through the combination of creativity, technology, and innovation.
+234D Games is an independent game studio creating immersive digital
+experiences through the combination of creativity, technology and innovation.
 
-Founded by an experienced digital artist and game developer, the studio brings together decades of expertise in 2D and 3D design, game development, animation, visual effects, and interactive technologies.
+Founded by an experienced digital artist and game developer,
+the studio brings together extensive expertise in 2D and 3D design,
+game development, animation, visual effects and interactive technologies.
 
-From mobile games to immersive experiences, 234D Games focuses on building engaging worlds, exciting gameplay, and memorable experiences for players.
+From mobile games to immersive experiences, 234D Games focuses on building
+engaging worlds, exciting gameplay and memorable digital experiences.
 
 </p>
 
 </div>
 
-
-<div class="card">
-
-<h3>Sky Shooter Features</h3>
+</section>
 
 
-<div class="features">
 
-<div class="feature">
-✈️
-<br>
-Aircraft Combat
-</div>
+<!-- BEHIND -->
 
-
-<div class="feature">
-🌆
-<br>
-City Defense Missions
-</div>
-
-
-<div class="feature">
-🚀
-<br>
-Missiles & Weapons
-</div>
-
-
-<div class="feature">
-🎯
-<br>
-Enemy Challenges
-</div>
-
-
-</div>
-
-</div>
-
+<section>
 
 <div class="card">
 
 <h3>Behind 234D Games</h3>
 
 <p>
-234D Games is an independent game development studio focused 
-on creating engaging mobile games and immersive digital experiences.
+
+234D Games is an independent game development studio focused on creating
+engaging mobile games and immersive digital experiences.
+
 <br><br>
 
-The studio's expertise spans 2D and 3D design, game development, 
-animation, visual effects (VFX), Virtual Reality (VR), 
-Augmented Reality (AR), Extended Reality (XR), 
+The studio's expertise spans
+
+<span class="highlight">2D and 3D design</span>,
+<span class="highlight">game development</span>,
+animation, visual effects (VFX),
+Virtual Reality (VR),
+Augmented Reality (AR),
+Extended Reality (XR),
 and AI-assisted creative workflows.
 
 <br><br>
 
-Drawing on over 25 years of experience in digital content creation, 234D Games combines creativity, 
-technical expertise, and innovation to deliver high-quality experiences across the gaming, 
-film, architecture, education, product visualization, and immersive simulation industries.
+Drawing on over 25 years of experience in digital content creation,
+234D Games combines creativity, technical expertise and innovation
+to deliver experiences across gaming, film, architecture, education,
+product visualization and immersive simulation.
+
 </p>
 
 </div>
 
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section>
+
+<h2 class="section-title">
+Skills & Expertise
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-item">
+
+<h4>🎮 Game Development</h4>
+
+<p>
+Unity • C# • Gameplay Programming • Mobile Development •
+Level Systems • UI • Optimization
+</p>
+
+</div>
+
+
+<div class="skill-item">
+
+<h4>🎨 Digital Art</h4>
+
+<p>
+2D Digital Art • 3D Digital Art • 3D Generalist •
+Visual Development • Game Assets
+</p>
+
+</div>
+
+
+<div class="skill-item">
+
+<h4>🥽 Immersive Technology</h4>
+
+<p>
+VR • AR • XR • Interactive Simulation •
+Immersive Learning Experiences
+</p>
+
+</div>
+
+
+<div class="skill-item">
+
+<h4>🤖 Emerging Technology</h4>
+
+<p>
+AI-assisted Creative Workflows • Interactive Experiences •
+Digital Innovation
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- VISION -->
+
+<section>
 
 <div class="card">
 
 <h3>Our Vision</h3>
 
 <p>
-At 234D Games, our vision is to combine art, technology, and imagination
+
+At 234D Games, our vision is to combine art, technology and imagination
 to create engaging games and interactive experiences that inspire players
 around the world.
-</p>
 
-</div>    
-
-<div class="card">
-
-<h3>Contact</h3>
-
-<p>
-Email:
-<br>
-<a href="mailto:234dgamestudio@gmail.com">
-234dgamestudio@gmail.com
-</a>
 </p>
 
 </div>
 
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section>
+
+<div class="card contact">
+
+<h3>Contact</h3>
+
+<p>
+
+For game development, game design,
+digital art and interactive technology opportunities:
+
+<br><br>
+
+<a href="mailto:234dgamestudio@gmail.com">
+234dgamestudio@gmail.com
+</a>
+
+</p>
+
+</div>
 
 </section>
 
+
+
+<!-- FOOTER -->
 
 <footer>
 
