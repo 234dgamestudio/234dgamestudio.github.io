@@ -1,719 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>234D Games | Game Design & Development Portfolio</title>
-
 <style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background: linear-gradient(#071b3a, #0b4f8a);
-    color: white;
-    line-height: 1.6;
-}
-
-header {
-    text-align: center;
-    padding: 55px 20px;
-    background: rgba(0,0,0,0.28);
-}
-
-header h1 {
-    font-size: 48px;
-    letter-spacing: 3px;
-}
-
-header p {
-    font-size: 20px;
-    margin-top: 10px;
-    color: #d9efff;
-}
-
-.header-role {
-    margin-top: 15px;
-    font-size: 17px;
-    color: #9ddcff;
-}
-
-section {
-    max-width: 1050px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-.hero {
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: auto;
-}
-
-.play-button,
-.portfolio-button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 30px;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.play-button {
-    background: #1a73e8;
-}
-
-.play-button:hover {
-    background: #0f5dc2;
-}
-
-.portfolio-button {
-    background: #16875d;
-}
-
-.portfolio-button:hover {
-    background: #116b4a;
-}
-
-.card {
-    background: rgba(255,255,255,0.1);
-    padding: 28px;
-    border-radius: 15px;
-    margin-top: 25px;
-}
-
-.card h3 {
-    margin-bottom: 15px;
-    font-size: 26px;
-}
-
-.card p {
-    font-size: 16px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.section-intro {
-    text-align: center;
-    color: #d9efff;
-    max-width: 800px;
-    margin: 0 auto 25px auto;
-}
-
-.features,
-.design-grid,
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
-    gap: 18px;
-    margin-top: 20px;
-}
-
-.feature,
-.design-item,
-.skill-item {
-    background: rgba(0,0,0,0.25);
-    padding: 22px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.feature {
-    font-size: 17px;
-}
-
-.feature-icon {
-    font-size: 28px;
-    margin-bottom: 8px;
-}
-
-.design-item h4,
-.skill-item h4 {
-    font-size: 20px;
-    margin-bottom: 8px;
-    color: #9ddcff;
-}
-
-.design-item p,
-.skill-item p {
-    font-size: 14px;
-}
-
-.gdd-box {
-    background: rgba(0,0,0,0.28);
-    border-radius: 15px;
-    padding: 30px;
-    margin-top: 25px;
-    text-align: center;
-}
-
-.gdd-box h3 {
-    font-size: 27px;
-    margin-bottom: 12px;
-}
-
-.gdd-box p {
-    max-width: 780px;
-    margin: auto;
-    color: #e0f2ff;
-}
-
-.gdd-button {
-    display: inline-block;
-    margin-top: 22px;
-    padding: 13px 28px;
-    background: #ffffff;
-    color: #12365d;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-}
-
-.gdd-button:hover {
-    background: #d9efff;
-}
-
-.project-list {
-    margin-top: 18px;
-    padding-left: 22px;
-}
-
-.project-list li {
-    margin-bottom: 7px;
-}
-
-.highlight {
-    color: #9ddcff;
-    font-weight: bold;
-}
-
-.contact {
-    text-align: center;
-}
-
-a {
-    color: #9ddcff;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    background: rgba(0,0,0,0.3);
-    margin-top: 30px;
-    color: #d9efff;
-}
-
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 36px;
-    }
-
-    .hero h2 {
-        font-size: 30px;
-    }
-
-    .section-title {
-        font-size: 27px;
-    }
-
-}
-
-</style>
-
-</head>
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:linear-gradient(#071b3a,#0b4f8a);color:white;line-height:1.6}
+header{text-align:center;padding:42px 20px;background:rgba(0,0,0,.28)}
+.logo{width:210px;max-width:70%;margin:0 auto 18px;display:block}
+header h1{font-size:46px;letter-spacing:3px} header p{font-size:20px;margin-top:8px;color:#d9efff}
+.header-role{margin-top:13px;font-size:17px;color:#9ddcff}
+section{max-width:1050px;margin:auto;padding:38px 20px}.hero{text-align:center}
+.hero h2{font-size:38px;margin-bottom:12px}.hero p{font-size:18px;max-width:800px;margin:auto}
+.hero-image{width:100%;max-height:520px;object-fit:cover;border-radius:18px;margin:28px 0 5px;border:1px solid rgba(255,255,255,.18)}
+.play-button,.portfolio-button,.gdd-button,.interactive-button{display:inline-block;margin-top:20px;padding:13px 28px;color:white;text-decoration:none;border-radius:28px;font-size:16px;font-weight:bold}
+.play-button{background:#1a73e8}.portfolio-button{background:#16875d}.gdd-button{background:#fff;color:#12365d}.interactive-button{background:#7b4dd8}
+.card{background:rgba(255,255,255,.1);padding:28px;border-radius:15px;margin-top:25px}.card h3{margin-bottom:14px;font-size:26px}
+.section-title{text-align:center;font-size:32px;margin-bottom:10px}.section-intro{text-align:center;color:#d9efff;max-width:800px;margin:0 auto 25px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}.gallery img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.15)}
+.design-grid,.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:20px}
+.design-item,.skill-item{background:rgba(0,0,0,.25);padding:22px;border-radius:12px;text-align:center}.design-item h4,.skill-item h4{font-size:19px;margin-bottom:8px;color:#9ddcff}
+.design-item p,.skill-item p{font-size:14px}.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:25px}
+.video-card{background:rgba(0,0,0,.25);padding:18px;border-radius:14px}.video-card iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:10px}.video-card h4{margin:12px 0 4px}
+.gdd-box{background:rgba(0,0,0,.28);border-radius:15px;padding:30px;margin-top:25px;text-align:center}.gdd-box p{max-width:780px;margin:auto;color:#e0f2ff}
+.gdd-button{margin-top:22px}.project-list{margin-top:18px;padding-left:22px}.project-list li{margin-bottom:7px}.contact{text-align:center}a{color:#9ddcff}
+footer{text-align:center;padding:30px;background:rgba(0,0,0,.3);margin-top:30px;color:#d9efff}
+@media(max-width:600px){header h1{font-size:36px}.hero h2{font-size:30px}.section-title{font-size:27px}.video-grid{grid-template-columns:1fr}}
+</style></head>
 <body>
+<header><img class="logo" src="images/234d-games-logo.png" alt="234D Games logo"><h1>234D Games</h1><p>Independent Game Studio</p>
+<div class="header-role">Nagesh Ranbhise — Game Designer | Unity Developer | 2D &amp; 3D Digital Artist</div></header>
 
+<section class="hero"><h2>Sky Shooter: Save the City</h2>
+<p>An independently developed Unity mobile game combining gameplay programming, combat systems, enemy design, targeting mechanics, visual development, and Android deployment.</p>
+<img class="hero-image" src="images/sky-shooter-hero.jpg" alt="Sky Shooter: Save the City">
+<a class="play-button" href="https://play.google.com/store/apps/details?id=com.gamestudio234d.skyshootersavethecity" target="_blank" rel="noopener">🎮 Play on Google Play</a></section>
 
-<!-- HEADER -->
+<section><h2 class="section-title">Sky Shooter Visual Portfolio</h2><p class="section-intro">Selected gameplay, environment, combat and interface views from the project.</p>
+<div class="gallery"><img src="images/sky-shooter-gameplay-01.jpg" alt="Sky Shooter gameplay"><img src="images/sky-shooter-gameplay-02.jpg" alt="Sky Shooter environment"><img src="images/sky-shooter-combat.jpg" alt="Sky Shooter combat"><img src="images/sky-shooter-ui.jpg" alt="Sky Shooter UI"></div></section>
 
-<header>
+<section><h2 class="section-title">🎬 Gameplay &amp; Development Videos</h2><p class="section-intro">Watch Sky Shooter in action and explore the project's gameplay presentation.</p>
+<div class="video-grid">
+<div class="video-card"><iframe src="https://www.youtube.com/embed/_h8_q7wO9Uo" title="Sky Shooter video 1" allowfullscreen loading="lazy"></iframe><h4>Sky Shooter — Gameplay / Demo</h4><a href="https://youtu.be/_h8_q7wO9Uo" target="_blank" rel="noopener">Watch on YouTube →</a></div>
+<div class="video-card"><iframe src="https://www.youtube.com/embed/8GifH8IvhUM" title="Sky Shooter video 2" allowfullscreen loading="lazy"></iframe><h4>Sky Shooter — Gameplay / Demo</h4><a href="https://youtu.be/8GifH8IvhUM" target="_blank" rel="noopener">Watch on YouTube →</a></div>
+</div></section>
 
-<h1>234D Games</h1>
-
-<p>
-Independent Game Studio
-</p>
-
-<div class="header-role">
-Nagesh Ranbhise — Game Designer | Unity Developer | 2D & 3D Digital Artist
-</div>
-
-</header>
-
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-<h2>Sky Shooter: Save the City</h2>
-
-<p>
-An independently developed Unity mobile game combining gameplay programming,
-combat systems, enemy design, targeting mechanics, visual development,
-and Android deployment.
-</p>
-
-<a class="play-button"
-href="https://play.google.com/store/apps/details?id=com.gamestudio234d.skyshootersavethecity"
-target="_blank">
-
-🎮 Play on Google Play
-
-</a>
-
-</section>
-
-
-
-<!-- GAME DESIGN PORTFOLIO -->
-
-<section>
-
-<h2 class="section-title">
-Game Design & Development Portfolio
-</h2>
-
-<p class="section-intro">
-A selection of systems and design documentation demonstrating how I approach
-gameplay mechanics, combat, progression, economy, boss encounters,
-and designer–programmer communication.
-</p>
-
-
+<section><h2 class="section-title">Game Design &amp; Development Portfolio</h2>
+<p class="section-intro">A selection of systems and design documentation demonstrating how I approach gameplay mechanics, combat, progression, economy, boss encounters, and designer–programmer communication.</p>
 <div class="design-grid">
-
-<div class="design-item">
-
-<h4>⚔️ Combat Design</h4>
-
-<p>
-Readable attacks, player movement, targeting,
-weapons, damage systems and meaningful combat decisions.
-</p>
-
+<div class="design-item"><h4>⚔️ Combat Design</h4><p>Readable attacks, player movement, targeting, weapons, damage systems and meaningful combat decisions.</p></div>
+<div class="design-item"><h4>👹 Boss &amp; Enemy Design</h4><p>Enemy roles, attack patterns, boss phases, telegraphs and fair player counterplay.</p></div>
+<div class="design-item"><h4>🎯 Risk &amp; Reward</h4><p>Mechanics that encourage aggressive and skilled play while keeping mistakes meaningful.</p></div>
+<div class="design-item"><h4>📈 Progression &amp; Economy</h4><p>XP curves, reward pacing and progression systems designed to keep players engaged without over-leveling.</p></div>
+<div class="design-item"><h4>🔄 Gameplay Systems</h4><p>Player abilities, cooldowns, resources, states, interactions and edge-case handling.</p></div>
+<div class="design-item"><h4>💻 Programmer Handoff</h4><p>Clear specifications, flows, values, edge cases and acceptance criteria for implementation.</p></div>
 </div>
-
-
-<div class="design-item">
-
-<h4>👹 Boss & Enemy Design</h4>
-
-<p>
-Enemy roles, attack patterns, boss phases,
-telegraphs and fair player counterplay.
-</p>
-
-</div>
-
-
-<div class="design-item">
-
-<h4>🎯 Risk & Reward</h4>
-
-<p>
-Mechanics that encourage aggressive and skilled play
-while keeping mistakes meaningful.
-</p>
-
-</div>
-
-
-<div class="design-item">
-
-<h4>📈 Progression & Economy</h4>
-
-<p>
-XP curves, reward pacing and progression systems
-designed to keep players engaged without over-leveling.
-</p>
-
-</div>
-
-
-<div class="design-item">
-
-<h4>🔄 Gameplay Systems</h4>
-
-<p>
-Player abilities, cooldowns, resources, states,
-interactions and edge-case handling.
-</p>
-
-</div>
-
-
-<div class="design-item">
-
-<h4>💻 Programmer Handoff</h4>
-
-<p>
-Clear specifications, flows, values, edge cases
-and acceptance criteria for implementation.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- GDD -->
-
-<div class="gdd-box">
-
-<h3>📘 Game Design Document Sample</h3>
-
-<p>
-My sample GDD demonstrates how I document game systems from concept
-through implementation and balancing. It includes combat design,
-boss telegraphing, risk/reward mechanics, XP progression,
-economy thinking, and a Time-Rewind ability specification.
-</p>
-
-<a class="gdd-button"
-href="Nagesh_Ranbhise_Game_Design_Sample_GDD.pdf"
-target="_blank">
-
-View Game Design Document
-
-</a>
-
-</div>
-
-</section>
-
-
-
-<!-- SKY SHOOTER -->
-
-<section>
-
-<div class="card">
-
-<h3>🎮 Featured Project — Sky Shooter: Save the City</h3>
-
-<p>
-A Unity-based mobile action shooter independently designed and developed
-from concept through Android deployment and Google Play publishing.
-</p>
-
-<ul class="project-list">
-
-<li>Unity gameplay development and C# scripting</li>
-
-<li>Player movement and mobile joystick controls</li>
-
-<li>Enemy spawning and attack patterns</li>
-
-<li>Aircraft combat and shooting systems</li>
-
-<li>Missile targeting and lock-on mechanics</li>
-
-<li>Enemy health and damage systems</li>
-
-<li>Level progression and multiple themes</li>
-
-<li>Mobile UI and safe-area implementation</li>
-
-<li>Android build, testing and Google Play deployment</li>
-
-<li>AdMob monetization integration</li>
-
-</ul>
-
-</div>
-
-</section>
-
-
-
-<!-- SKY SHOOTER FEATURES -->
-
-<section>
-
-<div class="card">
-
-<h3>Sky Shooter Features</h3>
-
-<div class="features">
-
-<div class="feature">
-
-<div class="feature-icon">✈️</div>
-
-Aircraft Combat
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">🌆</div>
-
-City Defense Missions
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">🚀</div>
-
-Missiles & Weapons
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">🎯</div>
-
-Enemy Challenges
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">🕹️</div>
-
-Mobile Controls
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">💥</div>
-
-Combat Effects
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- ABOUT -->
-
-<section>
-
-<div class="card">
-
-<h3>About 234D Games</h3>
-
-<p>
-
-234D Games is an independent game studio creating immersive digital
-experiences through the combination of creativity, technology and innovation.
-
-Founded by an experienced digital artist and game developer,
-the studio brings together extensive expertise in 2D and 3D design,
-game development, animation, visual effects and interactive technologies.
-
-From mobile games to immersive experiences, 234D Games focuses on building
-engaging worlds, exciting gameplay and memorable digital experiences.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- BEHIND -->
-
-<section>
-
-<div class="card">
-
-<h3>Behind 234D Games</h3>
-
-<p>
-
-234D Games is an independent game development studio focused on creating
-engaging mobile games and immersive digital experiences.
-
-<br><br>
-
-The studio's expertise spans
-
-<span class="highlight">2D and 3D design</span>,
-<span class="highlight">game development</span>,
-animation, visual effects (VFX),
-Virtual Reality (VR),
-Augmented Reality (AR),
-Extended Reality (XR),
-and AI-assisted creative workflows.
-
-<br><br>
-
-Drawing on over 25 years of experience in digital content creation,
-234D Games combines creativity, technical expertise and innovation
-to deliver experiences across gaming, film, architecture, education,
-product visualization and immersive simulation.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- SKILLS -->
-
-<section>
-
-<h2 class="section-title">
-Skills & Expertise
-</h2>
-
-<div class="skills-grid">
-
-<div class="skill-item">
-
-<h4>🎮 Game Development</h4>
-
-<p>
-Unity • C# • Gameplay Programming • Mobile Development •
-Level Systems • UI • Optimization
-</p>
-
-</div>
-
-
-<div class="skill-item">
-
-<h4>🎨 Digital Art</h4>
-
-<p>
-2D Digital Art • 3D Digital Art • 3D Generalist •
-Visual Development • Game Assets
-</p>
-
-</div>
-
-
-<div class="skill-item">
-
-<h4>🥽 Immersive Technology</h4>
-
-<p>
-VR • AR • XR • Interactive Simulation •
-Immersive Learning Experiences
-</p>
-
-</div>
-
-
-<div class="skill-item">
-
-<h4>🤖 Emerging Technology</h4>
-
-<p>
-AI-assisted Creative Workflows • Interactive Experiences •
-Digital Innovation
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- VISION -->
-
-<section>
-
-<div class="card">
-
-<h3>Our Vision</h3>
-
-<p>
-
-At 234D Games, our vision is to combine art, technology and imagination
-to create engaging games and interactive experiences that inspire players
-around the world.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- CONTACT -->
-
-<section>
-
-<div class="card contact">
-
-<h3>Contact</h3>
-
-<p>
-
-For game development, game design,
-digital art and interactive technology opportunities:
-
-<br><br>
-
-<a href="mailto:234dgamestudio@gmail.com">
-234dgamestudio@gmail.com
-</a>
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer>
-
-© 2026 234D Games
-<br>
-All Rights Reserved.
-
-</footer>
-
-
-</body>
-
-</html>
+<div class="gdd-box"><h3>📘 Game Design Document Sample</h3><p>My sample GDD demonstrates how I document game systems from concept through implementation and balancing, including combat design, boss telegraphing, risk/reward mechanics, XP progression, economy thinking, and a Time-Rewind ability specification.</p>
+<a class="gdd-button" href="Nagesh_Ranbhise_Game_Design_Sample_GDD.pdf" target="_blank">View Game Design Document</a></div></section>
+
+<section><h2 class="section-title">🧊 Interactive 3D Experience</h2><div class="card" style="text-align:center"><h3>Piston Study</h3><p>An interactive 3D demonstration showcasing real-time presentation and interactive digital work.</p>
+<a class="interactive-button" href="https://pistonstudy.netlify.app/" target="_blank" rel="noopener">Explore Interactive 3D →</a></div></section>
+
+<section><h2 class="section-title">🎨 Art &amp; Digital Portfolio</h2><div class="card" style="text-align:center"><h3>ArtStation — Nagesh Ranbhise</h3>
+<p>Explore my broader portfolio of 2D/3D digital art, visualization, environments, assets and creative work.</p>
+<a class="portfolio-button" href="https://www.artstation.com/nageshranbhise" target="_blank" rel="noopener">View ArtStation Portfolio →</a></div></section>
+
+<section><div class="card"><h3>🎮 Featured Project — Sky Shooter: Save the City</h3><p>A Unity-based mobile action shooter independently designed and developed from concept through Android deployment and Google Play publishing.</p>
+<ul class="project-list"><li>Unity gameplay development and C# scripting</li><li>Player movement and mobile joystick controls</li><li>Enemy spawning and attack patterns</li><li>Aircraft combat and shooting systems</li><li>Missile targeting and lock-on mechanics</li><li>Enemy health and damage systems</li><li>Level progression and multiple themes</li><li>Mobile UI and safe-area implementation</li><li>Android build, testing and Google Play deployment</li><li>AdMob monetization integration</li></ul></div></section>
+
+<section><h2 class="section-title">Skills &amp; Expertise</h2><div class="skills-grid">
+<div class="skill-item"><h4>🎮 Game Development</h4><p>Unity • C# • Gameplay Programming • Mobile Development • Level Systems • UI • Optimization</p></div>
+<div class="skill-item"><h4>🎨 Digital Art</h4><p>2D Digital Art • 3D Digital Art • 3D Generalist • Visual Development • Game Assets</p></div>
+<div class="skill-item"><h4>🥽 Immersive Technology</h4><p>VR • AR • XR • Interactive Simulation • Immersive Learning Experiences</p></div>
+<div class="skill-item"><h4>🤖 Emerging Technology</h4><p>AI-assisted Creative Workflows • Interactive Experiences • Digital Innovation</p></div>
+</div></section>
+
+<section><div class="card"><h3>About 234D Games</h3><p>234D Games is an independent game studio creating immersive digital experiences through the combination of creativity, technology and innovation. Founded by an experienced digital artist and game developer, the studio brings together extensive expertise in 2D and 3D design, game development, animation, visual effects and interactive technologies.</p></div>
+<div class="card"><h3>Our Vision</h3><p>At 234D Games, our vision is to combine art, technology and imagination to create engaging games and interactive experiences that inspire players around the world.</p></div></section>
+
+<section><div class="card contact"><h3>Contact</h3><p>For game development, game design, digital art and interactive technology opportunities:</p><br><a href="mailto:234dgamestudio@gmail.com">234dgamestudio@gmail.com</a></div></section>
+<footer>© 2026 234D Games<br>All Rights Reserved.</footer>
+</body></html>
